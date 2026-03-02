@@ -1,9 +1,54 @@
 # Setup Instructions for MCQ Exam System
 
-## Quick Start
+## Quick Start (Windows Users)
 
 ### Prerequisites
-- Node.js v14 or higher
+- Node.js v16 or higher (https://nodejs.org/)
+- npm (comes with Node.js)
+- Git (optional but recommended)
+
+### Option 1: Command Prompt / PowerShell
+
+First time setup:
+```bash
+# Backend Setup
+cd backend
+npm install
+copy .env.example .env
+
+# Frontend Setup (in a new terminal)
+cd frontend
+npm install
+copy .env.example .env
+```
+
+Running the application:
+```bash
+# Terminal 1 - Backend
+cd backend
+npm start
+
+# Terminal 2 - Frontend (after backend is running)
+cd frontend
+npm start
+```
+
+The frontend will open automatically at `http://localhost:3000`
+
+### Option 2: Docker (All platforms)
+
+```bash
+docker-compose up
+```
+
+This will start both backend on `localhost:5000` and frontend on `localhost:3000`.
+
+---
+
+## Detailed Setup Instructions
+
+### Prerequisites
+- Node.js v14 or higher (v16+ recommended)
 - npm or yarn
 
 ### Step 1: Install Dependencies
@@ -21,19 +66,38 @@ npm install
 ```
 
 ### Step 2: Configure Backend Environment
-The `.env` file is already created in the backend folder with default values:
+The `.env` file should be created in the backend folder. Copy the example:
+```bash
+cd backend
+cp .env.example .env  # Linux/Mac
+copy .env.example .env  # Windows
+```
+
+Default values:
 - `PORT=5000`
-- `JWT_SECRET=your_jwt_secret_key_here_change_in_production`
 - `NODE_ENV=development`
 
 You can modify these as needed.
 
-### Step 3: Start the Servers
+### Step 3: Configure Frontend Environment
+The `.env` file should be created in the frontend folder:
+```bash
+cd frontend
+cp .env.example .env  # Linux/Mac
+copy .env.example .env  # Windows
+```
+
+Default values:
+- `PORT=3000`
+- `DANGEROUSLY_DISABLE_HOST_CHECK=true` (for dev server compatibility)
+
+### Step 4: Start the Servers
 
 #### Start Backend (Terminal 1)
 ```bash
 cd backend
-npm run dev
+npm start           # Production mode
+npm run dev         # Development mode with auto-reload (requires nodemon)
 ```
 Backend will run on: `http://localhost:5000`
 
@@ -44,7 +108,44 @@ npm start
 ```
 Frontend will run on: `http://localhost:3000`
 
-The frontend will automatically open in your browser at `http://localhost:3000`
+The frontend will automatically open in your browser.
+
+### Troubleshooting
+
+#### Error: "react-scripts is not recognized"
+**Solution**: Make sure you've run `npm install` in the frontend folder:
+```bash
+cd frontend
+npm install
+```
+
+#### Error: "Cannot find module 'express'"
+**Solution**: Make sure you've run `npm install` in the backend folder:
+```bash
+cd backend
+npm install
+```
+
+#### Error: "allowedHosts[0] should be a non-empty string"
+**Solution**: Ensure `DANGEROUSLY_DISABLE_HOST_CHECK=true` is in your `frontend/.env` file:
+```bash
+cd frontend
+cat .env  # Check contents (Linux/Mac)
+type .env  # Check contents (Windows)
+```
+
+If `.env` is missing, create it:
+```bash
+copy .env.example .env  # Windows
+cp .env.example .env    # Linux/Mac
+```
+
+#### Port already in use
+If port 3000 or 5000 is already in use, you can change it:
+```bash
+# For frontend, edit frontend/.env and change PORT=3001 (or any free port)
+# For backend, edit backend/.env and change PORT=5001 (or any free port)
+```
 
 ## System Features
 

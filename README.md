@@ -30,28 +30,44 @@ A comprehensive Multiple Choice Questions (MCQ) exam system built with React fro
 ## Installation
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
+- Node.js (v14 or higher, v16+ recommended)
+- npm (v6+) or yarn
 
-### Backend Setup
+### Quick Setup
 
 ```bash
+# Backend setup
 cd backend
 npm install
-npm run dev
-```
+npm start  # or npm run dev for development with auto-reload
 
-The backend will run on `http://localhost:5000`
-
-### Frontend Setup
-
-```bash
+# In a new terminal, Frontend setup
 cd frontend
 npm install
 npm start
 ```
 
-The frontend will run on `http://localhost:3000`
+### Detailed Backend Setup
+
+```bash
+cd backend
+cp .env.example .env  # Create environment file (adjust as needed)
+npm install
+npm start             # Runs on http://localhost:5000
+# or
+npm run dev           # Development mode with nodemon auto-reload
+```
+
+### Detailed Frontend Setup
+
+```bash
+cd frontend
+cp .env.example .env  # Create environment file (should already exist)
+npm install
+npm start             # Runs on http://localhost:3000
+```
+
+**Note**: The frontend automatically includes the `.env` file for dev server configuration. If you encounter the `allowedHosts` error, ensure `DANGEROUSLY_DISABLE_HOST_CHECK=true` is set in your `.env` file.
 
 ## API Endpoints
 
