@@ -1,0 +1,216 @@
+[
+  {
+    "id": "1770876683117",
+    "examTitle": "ee",
+    "description": "eee",
+    "duration": 60,
+    "createdBy": "1770876615299",
+    "createdAt": "2026-02-12T06:11:23.117Z",
+    "questions": [
+      {
+        "id": 1,
+        "question": "eeeee",
+        "type": "mcq",
+        "options": [
+          "eee",
+          "eee",
+          "ee",
+          "ee"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 2,
+        "question": "eeeeee",
+        "type": "mcq",
+        "options": [
+          "eee",
+          "eee",
+          "eee",
+          "eee"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  {
+    "id": "1770876869632",
+    "examTitle": "sss",
+    "description": "sss",
+    "duration": 60,
+    "createdBy": "1770876615299",
+    "createdAt": "2026-02-12T06:14:29.632Z",
+    "questions": [
+      {
+        "id": 1,
+        "question": "sssss",
+        "type": "mcq",
+        "options": [
+          "ssss",
+          "sss",
+          "sss",
+          "ss"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  {
+    "id": "1770877566572",
+    "examTitle": "ssss",
+    "description": "ssss",
+    "duration": 60,
+    "createdBy": "1770877046705",
+    "createdAt": "2026-02-12T06:26:06.572Z",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is 2+2?",
+        "type": "mcq",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the capital of France?",
+        "type": "mcq",
+        "options": [
+          "London",
+          "Berlin",
+          "Paris",
+          "Madrid"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  {
+    "id": "1770877948192",
+    "examTitle": "Basic Math",
+    "description": "Simple arithmetic questions",
+    "duration": 30,
+    "createdBy": "1770877046705",
+    "createdAt": "2026-02-12T06:32:28.192Z",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is 2+2?",
+        "type": "mcq",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is 10 - 3?",
+        "type": "mcq",
+        "options": [
+          "7",
+          "8",
+          "6",
+          "9"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "question": "What is 5 * 4?",
+        "type": "mcq",
+        "options": [
+          "15",
+          "20",
+          "25",
+          "30"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  {
+    "id": "1770878275019",
+    "examTitle": "Math Quiz",
+    "description": "Basic math",
+    "duration": 60,
+    "createdBy": "1770877046705",
+    "createdAt": "2026-02-12T06:37:55.019Z",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is 2+2?",
+        "type": "mcq",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  {
+    "id": "1770878508149",
+    "examTitle": "sss",
+    "description": "sssss",
+    "duration": "1",
+    "createdBy": "1770876615299",
+    "createdAt": "2026-02-12T06:41:48.149Z",
+    "questions": [
+      {
+        "id": 1,
+        "question": "sssss",
+        "type": "mcq",
+        "options": [
+          "sss",
+          "ssss",
+          "ss",
+          "ss"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  {
+    "id": "1770878722267",
+    "examTitle": "tttt",
+    "description": "tttt",
+    "duration": 60,
+    "createdBy": "1770876615299",
+    "createdAt": "2026-02-12T06:45:22.267Z",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is 2+2?",
+        "type": "mcq",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the capital of France?",
+        "type": "mcq",
+        "options": [
+          "London",
+          "Berlin",
+          "Paris",
+          "Madrid"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  }
+]

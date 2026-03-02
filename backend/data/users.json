@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1770876615299",
+    "email": "l@gmail.com",
+    "fullName": "l",
+    "password": "$2a$10$LHynf/6F6M3RBWjEHXhXreIdxwuBqCSFjJZRleEtCa2/duECybSZG",
+    "createdAt": "2026-02-12T06:10:15.299Z"
+  },
+  {
+    "id": "1770877046705",
+    "email": "k@gmail.com",
+    "fullName": "j",
+    "password": "$2a$10$Zru10FIDVVhsAn6uihoRouaIhSXtoZT.dH//UGR0GCwXBRievCaT6",
+    "createdAt": "2026-02-12T06:17:26.705Z"
+  }
+]
